@@ -3,17 +3,12 @@
 This repository contains my learning journey and projects from the Full-Stack MERN Stack Web Development Course by Tutedude.
 The course focuses on building modern web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
 
-🛠️ Tech Stack
-| Technology        | Description                    |
-| ----------------- | ------------------------------ |
-| HTML5             | Structure of web pages         |
-| CSS3              | Styling and responsive design  |
-| JavaScript (ES6+) | Application logic              |
-| React.js          | Front-end library for UI       |
-| Node.js           | JavaScript runtime for backend |
-| Express.js        | Backend web framework          |
-| MongoDB           | NoSQL database                 |
-| Git & GitHub      | Version control                |
+Tech Stack (Learning in Progress)
+Category	Tech Labels (Visual)
+Frontend	HTML5 CSS3 JavaScript React
+Backend	NodeJS Express.js
+Database	MongoDB
+Tools	Git VS Code Netlify
 
 🎯 Learning Goals
 
@@ -22,6 +17,6 @@ The course focuses on building modern web applications using the MERN stack (Mon
 ✔ Strengthen JavaScript skills
 ✔ Create portfolio-ready projects
 
-## 🌐 Connect With Me
+📫 Connect with me
 
 * 💼 LinkedIn: https://linkedin.com/in/disha-patel-203077

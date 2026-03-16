@@ -140,6 +140,36 @@ i{
 margin-right:8px;
 color:#0072ff;
 }
+form{
+display:flex;
+flex-direction:column;
+width:350px;
+margin:auto;
+gap:15px;
+}
+
+input{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:12px;
+border:none;
+background:#0077b6;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
 /* mobile view */
 @media (max-width: 768px) {
  header{
