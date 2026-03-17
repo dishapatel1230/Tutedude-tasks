@@ -68,16 +68,18 @@ gap: 30px;
 flex-wrap:wrap;
 padding:60px 20px;
 }
+
 .price-card{
 background:white;
 padding:30px;
-width:250px;
+min-width:250px;
 border-radius:10px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:transform 0.3s ease, border 0.3s ease;
 }
 .price-card:hover{
     border:2px solid #0077b6;
-   /* transform:scale(1.05);*/
+    transform:scale(1.05);
 }
 .price-card h2{
 margin-bottom:10px;
