@@ -1,0 +1,41 @@
+/* prevent default */
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color: #f0f0f0;
+    width:100vw;
+    height:100vh;
+    position: fixed;
+}
+/* main container */
+.image-container{
+    /* To get 25% space left/right: 100 - 25 - 25 = 50vw */ 
+    width: 50vw;
+    /* 10vh top/bottom, 'auto' handles the 25vw left/right spacing */
+    margin: 10vh auto;
+    border: 1px solid #333;
+}
+/* image styling */
+.img{
+    width: 100%;
+    display: block;
+}
+
+/* button styling */
+.gradient-btn{
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    /* linear gradient bg */
+    background: linear-gradient(to right, yellow, green, blue);
+    color: white;
+    font-size: 1.2rem;
+    font-family:cursive;
+    cursor: pointer;
+}
