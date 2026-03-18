@@ -17,7 +17,7 @@ The course focuses on building modern web applications using the MERN stack (Mon
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **01** | Hello World | Basic HTML structure and document boilerplate. | [🚀 View] | [📂 Code] (./index.html)  | ✅ Done |
 | **02** | Laundry Mart | Business landing page using HTML Tables & Forms. | [🚀 View] (https://dishapatel1230.github.io/Tutedude-tasks/) | [📂 Code](./index.html) | ✅ Done |
-| **03** | CSS Selectors | Deep dive into ID, Class, and Attribute selectors. | [🚀 View] (https://dishapatel1230.github.io/Tutedude-tasks/Task-03/task-3%20index.html | [📂 Code](./Task-03/) | ✅ Done |
+| **03** | CSS Selectors | Deep dive into ID, Class, and Attribute selectors. | [🚀 View] (https://dishapatel1230.github.io/Tutedude-tasks/Task-03/task-3%20index.html) | [📂 Code](./Task-03/) | ✅ Done |
 | **04** | Advanced CSS | Practice with Flexbox, Grid, and Layouts. | [🚀 View] | [📂 Code] |  
 | **05** | CSS Box Model | Mastery of Viewport units and sizing logic. | [🚀 View] | [📂 Code]| |
 | **06** | CSS Project | Finalizing CSS modules with a responsive project. | — | — | ⏳ Upcoming |

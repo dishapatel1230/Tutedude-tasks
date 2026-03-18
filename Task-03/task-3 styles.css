@@ -26,3 +26,8 @@ body{
  ol > li:nth-child(3){
     color:red;
  }
+
+.highlight{
+    background-color:violet;
+    color:black
+}
