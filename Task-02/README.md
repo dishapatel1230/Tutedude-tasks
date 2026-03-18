@@ -9,7 +9,7 @@ A responsive landing page for a laundry service business. This task focused on s
 - **Smooth Navigation:** Internal page links using ID anchors (Contact Us).
 
 ## 🚀 Live Demo
-[View Task2 Live](https://dishapatel1230.github.io/Tutedude-tasks/)
+[View Task2 Live](https://dishapatel1230.github.io/Tutedude-tasks/Task-02/index.html)
 
 ## 💡 What I Learned
 - Proper use of semantic HTML.
