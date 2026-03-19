@@ -1,41 +1,54 @@
-/* prevent default */
+/* removing default spacing so calculations stay predictable */
 *{
-    box-sizing: border-box;
-    margin:0px;
-    padding:0px;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 html,body{
-    height: 100%;
+    width:100%;
 }
 body{
-    background-color: #f0f0f0;
-    width:100vw;
-    height:100vh;
-    position: fixed;
+    background-color:#f0f0f0;
 }
-/* main container */
+
+/* main container for image + button */
 .image-container{
-    /* To get 25% space left/right: 100 - 25 - 25 = 50vw */ 
-    width: 50vw;
-    /* 10vh top/bottom, 'auto' handles the 25vw left/right spacing */
-    margin: 10vh auto;
-    border: 1px solid #333;
+
+    /* 50vw width leaves empty space on left and right */
+    width:50vw;
+    /* space from top and bottom */
+    margin:10vh auto;
+    /* ensures total layout equals 100vh */
+    height:80vh;
+    border:1px solid #333;
 }
-/* image styling */
+
+/* image should fill the container width */
 .img{
-    width: 100%;
-    display: block;
+    width:100%;
+    height:calc(100% - 60px);
+    display:block;
+    object-fit:cover;
 }
 
 /* button styling */
 .gradient-btn{
-    width: 100%;
-    padding: 20px 0;
-    border: none;
-    /* linear gradient bg */
-    background: linear-gradient(to right, yellow, green, blue);
-    color: white;
-    font-size: 1.2rem;
+    width:100%;
+    height:60px;
+    border:none;
+
+    background:linear-gradient(to right, yellow, green, blue);
+
+    color:white;
+    font-size:1.2rem;
     font-family:cursive;
-    cursor: pointer;
+    cursor:pointer;
+
+    transition:all 0.2s ease;
+}
+
+/* hover effect */
+.gradient-btn:hover{
+    opacity:0.9;
+    transform:scale(1.02);
 }

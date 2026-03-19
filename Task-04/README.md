@@ -1,34 +1,65 @@
-# 🎨 Task 04: CSS Units, Box Model & Viewport
+# Task 04 – Full Screen Layout
 
-This project focuses on precision layouts using **CSS Viewport Units** (`vw`/`vh`) and the **Box Model**. The challenge was to create a perfectly centered, non-scrolling layout without using Flexbox, Absolute Positioning, or `overflow: hidden`.
+## Overview
 
----
+In this task I created a simple full screen layout using HTML and CSS.
 
-## 🔗 Live Demo
-Check out the live project here:  
-**[🚀 View Live Task]**
+The goal was to make the page take exactly the height of the viewport (100vh) so that no vertical scrolling appears.
 
----
-
-## 🛠 Tech Stack 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+The page contains a small navbar and a hero section with a button in the center.
 
 ---
 
-## 💡 Key Learning Milestones
+## What I Learned
 
-### **The "No Scroll" Challenge**
-I learned that scrolling occurs when content dimensions exceed $100\%$. To solve this without using "cheat codes" like `overflow: hidden`, I mastered:
-- **`box-sizing: border-box`**: Ensuring padding and borders stay *inside* the defined width.
-- **Viewport Units**: Using `vh` and `vw` to ensure the container is relative to the screen size.
-- **Image Display**: Setting `display: block` on the image to remove the default 3px "ghost" spacing at the bottom.
+While working on this task I understood better how viewport units work and how spacing can accidentally create scroll.
 
-### **Layout Logic**
-- **Centering**: Used `margin: 10vh auto` to calculate 25% side spacing ($50vw$ width + `auto` margins = $25vw$ on each side).
-- **Gradients**: Implemented a multi-color `linear-gradient` for a vibrant, professional-looking button.
+I also learned that padding and margins can increase the total height of elements if box-sizing is not handled properly.
+
+Using flexbox made it easier to structure the page so the hero section fills the remaining space.
+
+---
+## Viewport Layout Explanation
+Viewport Height (100vh)
+│
+│   10vh  →  Top Margin
+│
+├───────────────────────────────
+│                               │
+│                               │
+│       image-container         │
+│           80vh                │
+│                               │
+│                               │
+├───────────────────────────────
+│
+│   10vh  →  Bottom Margin
+│
+Total = 10vh + 80vh + 10vh = 100vh
+The page is designed so that the total vertical height equals the viewport height (100vh).
+Because everything adds up to exactly 100vh, the page fits perfectly in the viewport and no vertical scrolling appears.
+
+## Challenges
+
+Initially I tried using position: fixed but later realized that it avoids the real layout problem.
+
+After removing it, I adjusted the layout using flexbox and box-sizing so the page height matches the viewport height exactly.
 
 ---
 
-## 📂 Files in this project
-- `index.html` - Semantic HTML structure.
-- `style.css` - Custom styling using Viewport units and Box Model logic.
+## How to Run
+
+1. Download or clone the project
+2. Open the folder
+3. Open index.html in a browser
+
+No installation is required.
+
+---
+
+## Features
+
+- Full viewport layout
+- No scrolling
+- Simple responsive structure
+- Button hover effect
