@@ -1,0 +1,184 @@
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+ body{
+    overflow:hidden;
+ }
+
+/* Navbar */
+
+.navbar{
+width:100%;
+padding:20px 80px;
+background:#f8f8f8;
+}
+
+/* logo */
+
+.logo{
+display:inline-block;
+font-size:22px;
+font-weight:bold;
+}
+
+/* nav links */
+
+.nav-links{
+display:inline-block;
+list-style:none;
+margin-left:250px;
+}
+
+.nav-links li{
+display:inline-block;
+margin:0 20px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-size:16px;
+}
+
+/* username */
+
+.username{
+float:right;
+background:#dff3ff;
+padding:8px 16px;
+border-radius:10px;
+}
+
+
+/* Hero Section */
+
+.hero{
+height:90vh;
+padding:60px 80px;
+}
+
+/* left side */
+
+.hero-left{
+width:45%;
+display:inline-block;
+vertical-align:middle;
+margin-right:40px;
+}
+
+.hero-left h1{
+font-size:42px;
+color:#333;
+line-height:1.4;
+}
+
+.hero-left span{
+color:#1e90ff;
+}
+
+.hero-left p{
+margin:20px 0;
+color:#666;
+line-height:1.6;
+}
+
+.hero-left button{
+background:#1e90ff;
+color:white;
+border:none;
+padding:12px 22px;
+border-radius:8px;
+cursor:pointer;
+}
+
+
+/* right side */
+
+.hero-right{
+width:45%;
+display:inline-block;
+vertical-align:middle;
+text-align:center;
+}
+
+.hero-right img{
+width:100%;
+border-radius: 10px;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablet */
+
+@media (max-width: 1024px){
+
+.nav-links{
+margin-left:50px;
+}
+
+.hero-left h1{
+font-size:32px;
+}
+
+.username{
+    padding: 6px 0px;
+}
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px){
+
+.navbar{
+padding:15px 20px;
+}
+
+.nav-links{
+display:block;
+margin-top:10px;
+}
+
+.nav-links li{
+display:block;
+margin:10px 0;
+}
+
+.username{
+float:none;
+display:block;
+margin-top:10px;
+width:fit-content;
+}
+
+/* stack hero section */
+
+.hero{
+height:auto;
+text-align:center;
+padding:30px 40px;
+}
+
+.hero-left,
+.hero-right{
+width:100%;
+}
+
+.hero-right img{
+width:60%;
+margin-top:20px;
+display:inline-block;
+}
+
+.hero-left h1{
+font-size:26px;
+}
+
+}
