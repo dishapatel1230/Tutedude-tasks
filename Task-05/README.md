@@ -67,9 +67,8 @@ Concepts practiced in this project:
 Task5-CSS-Hero-Section
 │
 ├── index.html
-├── style.css
+├── styles.css
 ├── README.md
-└── screenshot.png
 ```
 
 ---
