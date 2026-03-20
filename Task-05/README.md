@@ -87,7 +87,7 @@ The layout adapts to different screen sizes.
 ---
 
 ## 🌐 Live Demo
-https://yourusername.github.io/Tutedude-tasks/Task-05/index.html
+https://dishapatel1230.github.io/Tutedude-tasks/Task-05/index.html
 
 
 ---
@@ -117,4 +117,4 @@ Possible improvements for the project:
 # 👩‍💻 Author
 
 **Disha Patel**
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/dishapatel1230

@@ -18,7 +18,7 @@ relies on exact viewport calculations (vh and vw).
 /* make sure the page height matches the viewport */
 html,body{
     height:100%;
-    overflow:hidden
+    overflow: hidden;
 }
 
 body{
