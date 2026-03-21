@@ -45,9 +45,13 @@ Clean and simple UI
 While building this responsive login page, a few challenges were encountered:
 
 Centering the layout vertically and horizontally using Flexbox so the login container stays in the middle of the screen.
+
 Handling responsive design so the split layout works properly on smaller devices.
-Fixing the mobile viewport height issue caused by 100vh, which was solved by using modern units like 100dvh.
+
+Fixing the mobile viewport height issue.
+
 Preventing content overflow or cut-off on smaller screens by avoiding fixed heights and using flexible layout techniques.
+
 Maintaining proper spacing between form elements to keep the UI clean and readable.
 ---
 
