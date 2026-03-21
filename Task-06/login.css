@@ -2,26 +2,24 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /* BODY STRUCTURE*/
 body{
 background:#f3f5f9;
- /*dynamic height that adapts to browser UI changes */
-min-height:100dvh; 
+height:100vh; 
 display:flex;
 justify-content:center;
 align-items:center;
 overflow-x:hidden;
-
 }
 
 /* MAIN CARD */
 
 .login-container{
 display:flex;
-/* dynamic width that adapts to different screen sizes, with a max width of 900px */
-width:min(100%,900px);
+width:900px;
 min-height:500px;
 background:white;
 border-radius:10px;
@@ -30,8 +28,10 @@ box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
 /* LEFT SIDE */
-
-.left{
+/* The flex property is a shorthand property for:
+flex-grow,flex-shrink,flex-basis
+The flex property sets the flexible length on flexible items.*/
+.left-column{
 flex:1;
 background:#1ea0e3;
 display:flex;
@@ -39,13 +39,13 @@ justify-content:center;
 align-items:center;
 }
 
-.left img{
+.left-column img{
 width:280px;
 }
 
-/* RIGHT SIDE */
+/* RIGHT SIDE Content */
 
-.right{
+.right-column{
 flex:1;
 padding:60px 50px;
 background:#eef2f7;
@@ -54,8 +54,7 @@ flex-direction:column;
 justify-content:center;
 }
 
-/* rIGHT SIDE CONTENT*/
-.right h2{
+.right-column h2{
 font-size:28px;
 margin-bottom:5px;
 }
@@ -64,6 +63,7 @@ margin-bottom:5px;
 color:#666;
 margin-bottom:30px;
 }
+
 /* FORM STYLES*/
 form{
 display:flex;
@@ -120,20 +120,23 @@ font-size:14px;
 color:#1ea0e3;
 text-decoration:none;
 }
+
 /* RESPONSIVE DESIGN */
 @media (max-width:768px){
 
 .login-container{
+/* For smaller screens, we stack the left and right sections vertically */
 flex-direction:column;
 min-height: auto;
+width:100%;
 }
 
-.left{
+.left-column{
 height:220px;
 }
 
-.right{
-padding:clamp(25px,6vw,40px);
+.right-column{
+padding: 25px;
 overflow-y:auto;
 }
 

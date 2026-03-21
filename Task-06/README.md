@@ -1,29 +1,29 @@
-# 🔐 Responsive Split Login Page UI
+# 🔐TASK-06  Responsive Split Login Page UI
 
-A **modern responsive split-screen login page** built with **HTML5 and CSS3**.
-This project demonstrates a **clean authentication UI layout** commonly used in modern web applications.
+This project demonstrates a responsive split-screen login page UI built using HTML and CSS.
+The layout includes an illustration section on the left and a login form on the right, designed using Flexbox for proper alignment.
 
-The interface uses **Flexbox layout**, **modern responsive CSS techniques**, and a **two-column design** with an illustration panel and login form.
+## Desktop View
+
+The login page appears as a two-column layout where:
+
+The left panel displays an illustration or image.
+The right panel contains the login form with email and password inputs.
+
+## Mobile View
+
+On smaller screens, the layout becomes stacked vertically to improve usability and readability.
 
 ---
-
-## 🌐 Live Demo
-
-You can preview the project by opening the `login.html` file in your browser.
-
-[Live Demo](https://dishapatel1230.github.io/Tutedude-tasks/Task-06/login.html)
 ---
 
 ## 🚀 Features
 
-✅ Split Screen Layout (Image + Form)
-✅ Modern UI Design
-✅ Fully Responsive Layout
-✅ Mobile Friendly
-✅ Dynamic Viewport Height (`100dvh`)
-✅ Fluid Spacing using `clamp()`
-✅ Gradient Login Button
-✅ Clean and Maintainable Code
+Responsive design
+Split screen layout
+Flexbox layout
+Gradient login button
+Clean and simple UI
 
 ---
 
@@ -38,77 +38,42 @@ You can preview the project by opening the `login.html` file in your browser.
 
 ---
 
-## 📂 Project Structure
-
-```id="6c8p19"
-responsive-login-ui
-│
-├── index.html
-├── style.css
-├── images
-│   └── 2306.i518.020.S.m005.c13.realistic washing machine.jpg
-└── README.md
-```
-
 ---
 
-## 📱 Responsive Design
+## Challenges Faced
 
-This project uses **modern responsive CSS techniques**:
+While building this responsive login page, a few challenges were encountered:
 
-* `100dvh` → Fixes mobile viewport height issues
-* `clamp()` → Fluid spacing for different screen sizes
-* `min()` → Adaptive container width
-* Flexbox → Flexible layout alignment
-
-These techniques ensure the layout works properly across:
-
-* Mobile devices
-* Tablets
-* Desktop screens
-
+Centering the layout vertically and horizontally using Flexbox so the login container stays in the middle of the screen.
+Handling responsive design so the split layout works properly on smaller devices.
+Fixing the mobile viewport height issue caused by 100vh, which was solved by using modern units like 100dvh.
+Preventing content overflow or cut-off on smaller screens by avoiding fixed heights and using flexible layout techniques.
+Maintaining proper spacing between form elements to keep the UI clean and readable.
 ---
-
-## 🎨 UI Layout
-
----------------------------------------
-|       IMAGE PANEL (LEFT SIDE)       |
-|     Laundry Illustration Graphic    |
-|-------------------------------------|
-|         LOGIN FORM (RIGHT)          |
-|                                     |
-|   Hello Again!                      |
-|   Email Input                       |
-|   Password Input                    |
-|   Forgot Password                   |
-|   Login Button                      |
-|   Register Link                     |
----------------------------------------
-```
 
 ---
 
 ## ⚙️ Installation
 
 Clone the repository:
-
 git clone https://github.com/dishapatel1230/Task-06/login.html
-```
-
 Open the folder and run:
-
 login.html
-```
 
 ---
+## 🌐 Live Demo
 
+You can preview the project by opening the `login.html` file in your browser.
+
+[Live Demo](https://dishapatel1230.github.io/Tutedude-tasks/Task-06/login.html)
+---
 ## 📚 Learning Goals
 
 This project demonstrates:
 
 * Building a **split screen layout**
 * Creating **responsive UI using Flexbox**
-* Using **modern CSS functions**
+* Using **CSS flexbox**
 * Designing a **clean login interface**
 
 ---
@@ -132,7 +97,3 @@ Front-End Developer
 GitHub: https://github.com/dishapatel1230
 
 ---
-
-## ⭐ Support
-
-If you like this project, consider giving it a **star ⭐ on GitHub**.
