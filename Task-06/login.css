@@ -1,0 +1,140 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+/* BODY STRUCTURE*/
+body{
+background:#f3f5f9;
+ /*dynamic height that adapts to browser UI changes */
+min-height:100dvh; 
+display:flex;
+justify-content:center;
+align-items:center;
+overflow-x:hidden;
+
+}
+
+/* MAIN CARD */
+
+.login-container{
+display:flex;
+/* dynamic width that adapts to different screen sizes, with a max width of 900px */
+width:min(100%,900px);
+min-height:500px;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* LEFT SIDE */
+
+.left{
+flex:1;
+background:#1ea0e3;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.left img{
+width:280px;
+}
+
+/* RIGHT SIDE */
+
+.right{
+flex:1;
+padding:60px 50px;
+background:#eef2f7;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+/* rIGHT SIDE CONTENT*/
+.right h2{
+font-size:28px;
+margin-bottom:5px;
+}
+
+.subtitle{
+color:#666;
+margin-bottom:30px;
+}
+/* FORM STYLES*/
+form{
+display:flex;
+flex-direction:column;
+}
+
+label{
+font-size:14px;
+margin-bottom:5px;
+color:#444;
+}
+
+input{
+padding:12px;
+margin-bottom:20px;
+border:none;
+border-radius:6px;
+background:#fff;
+box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+
+.forgot{
+text-align:right;
+margin-bottom:20px;
+}
+
+.forgot a{
+font-size:13px;
+text-decoration:none;
+color:#555;
+}
+
+button{
+padding:14px;
+background:linear-gradient(90deg,#1ea0e3,#0b7cc4);
+border:none;
+border-radius:8px;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+.register{
+text-align:center;
+margin-top:20px;
+font-size:14px;
+}
+
+.register a{
+color:#1ea0e3;
+text-decoration:none;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width:768px){
+
+.login-container{
+flex-direction:column;
+min-height: auto;
+}
+
+.left{
+height:220px;
+}
+
+.right{
+padding:clamp(25px,6vw,40px);
+overflow-y:auto;
+}
+
+}
