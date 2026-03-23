@@ -1,143 +1,130 @@
+/*CSS file for login page */
+/*I have rewritten the CSS files myself using simpler code and explanations based on what I learned.*/
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* BODY STRUCTURE*/
 body{
-background:#f3f5f9;
-height:100vh; 
 display:flex;
-justify-content:center;
+justify-content: center;
 align-items:center;
+background:#f3f5f9;
 overflow-x:hidden;
 }
 
-/* MAIN CARD */
-
 .login-container{
-display:flex;
-width:900px;
-min-height:500px;
-background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    width:900px;
+    height: 100vh;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 0 10px 30px rgba(0,0,0,0.1);
+    overflow:hidden;
+    display: flex;
 }
-
-/* LEFT SIDE */
-/* The flex property is a shorthand property for:
-flex-grow,flex-shrink,flex-basis
-The flex property sets the flexible length on flexible items.*/
+/*left column for image and right column for form */
 .left-column{
-flex:1;
-background:#1ea0e3;
-display:flex;
-justify-content:center;
-align-items:center;
+    width:50%;
+    background:#1ea0e3;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex:1;
 }
-
 .left-column img{
-width:280px;
+    width:80%;
+    border-radius:10px;
 }
-
-/* RIGHT SIDE Content */
 
 .right-column{
-flex:1;
-padding:60px 50px;
 background:#eef2f7;
-display:flex;
-flex-direction:column;
-justify-content:center;
+padding:60px 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex:1;
 }
 
 .right-column h2{
-font-size:28px;
-margin-bottom:5px;
+    margin-bottom:10px;
+    font-size:2rem;
+    text-align: center;
 }
 
 .subtitle{
-color:#666;
-margin-bottom:30px;
+    margin-bottom:30px;
+    color:cadetblue;
+    text-align: center;
 }
-
-/* FORM STYLES*/
+/* form styles */
 form{
-display:flex;
-flex-direction:column;
+    display: flex;
+    flex-direction:column;
 }
-
 label{
-font-size:14px;
-margin-bottom:5px;
-color:#444;
+    font-size:14px;
+    margin-bottom:3px;
+    color:#444444;
 }
 
 input{
-padding:12px;
-margin-bottom:20px;
-border:none;
-border-radius:6px;
-background:#fff;
-box-shadow:0 2px 5px rgba(0,0,0,0.05);
+    background: white;
+    padding:12px;
+    margin-bottom:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.05);
+    border:none;
+    border-radius:6px;
 }
-
+button{
+    background:linear-gradient(90deg,#1ea0e3,#0b7cc4);
+    color:#fff;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+ button:hover{
+    opacity: 0.9;
+ }
 .forgot{
-text-align:right;
-margin-bottom:20px;
+    text-align: right;;
+    margin-bottom:10px;
 }
 
 .forgot a{
-font-size:13px;
-text-decoration:none;
-color:#555;
-}
-
-button{
-padding:14px;
-background:linear-gradient(90deg,#1ea0e3,#0b7cc4);
-border:none;
-border-radius:8px;
-color:white;
-font-size:16px;
-cursor:pointer;
-}
-
-button:hover{
-opacity:0.9;
+    text-decoration: none;;
+    font-size:13px;
+    color: #555;
 }
 
 .register{
-text-align:center;
-margin-top:20px;
-font-size:14px;
+   text-align: center;
+   font-size:14px;
+   margin-top:40px; 
+}
+.register a{
+    text-decoration:none;
+    color:#1ea0e3;
 }
 
-.register a{
-color:#1ea0e3;
-text-decoration:none;
-}
 
 /* RESPONSIVE DESIGN */
 @media (max-width:768px){
-
-.login-container{
-/* For smaller screens, we stack the left and right sections vertically */
-flex-direction:column;
-min-height: auto;
-width:100%;
-}
-
-.left-column{
-height:220px;
-}
-
-.right-column{
-padding: 25px;
-overflow-y:auto;
-}
-
+    .login-container{
+        flex-direction: column;
+        width:100%;
+        height:auto;
+    }
+    .left-column{
+     height:425px;
+     width:auto;
+    }
+    .right-column{
+        padding:20px;
+        overflow-y: auto;
+    }
 }
