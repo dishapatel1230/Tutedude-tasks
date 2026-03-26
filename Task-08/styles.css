@@ -6,18 +6,31 @@ padding:0;
 box-sizing:border-box;
 font-family:Arial, Helvetica, sans-serif;
 }
- body{
+
+body{
     overflow:hidden;
  }
-
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
+}
 /* Navbar */
-
 .navbar{
+display:flex;
+justify-content: space-between;
+align-items: center;
 width:100%;
 padding:20px 80px;
 background:#f8f8f8;
 }
-
+/*hamburger*/
+.hamburger{
+    display: none;
+    cursor: pointer;
+    font-size:28px;
+    border:none;
+}
 /* logo */
 
 .logo{
@@ -29,7 +42,8 @@ font-weight:bold;
 /* nav links */
 
 .nav-links{
-display:inline-block;
+display:flex;
+gap:20px;
 list-style:none;
 margin-left:250px;
 }
@@ -153,29 +167,48 @@ font-size:32px;
 /* Mobile */
 
 @media (max-width: 768px){
-
+.hamburger{
+   display: block;
+   margin-left:auto;
+   order:3;
+}
 .navbar{
 display:flex;
-/*ex-direction: column;*/
-align-items: flex-start;
+align-items:center;
 padding:15px 20px;
 }
 
 .nav-links{
+position: absolute;
 display:none;
 flex-direction: column;
+top:58px;
+right:0px;
+width:250px;
 gap:10px;
 margin-top:10px;
+background: white;
+}
+/* show menu when hamburger is focused */
+.hamburger:focus + .nav-links{
+ display: flex;
+ align-items: center;
+justify-content:center;
+height:100%;
+background: #f8f8f8;
 }
 
-/*.nav-links li{
-display:block;
-margin:10px 0;
-}*/
+.nav-links.active{
+display:flex;
+align-items: center;
+justify-content:center;
+height:100%;
+background: #f8f8f8;
+}
 
 .username{
-align-self: flex-end;
-width:fit-content;
+    margin-left: 65px;
+order:2;
 }
 
 /* stack hero section */
