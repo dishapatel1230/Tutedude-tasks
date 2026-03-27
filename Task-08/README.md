@@ -68,7 +68,7 @@ Menu visibility is controlled using:
 }
 ```
 ## Live Demo
-
+![mobile view activation hamburger](image.png)
 https://dishapatel1230.github.io/Tutedude-tasks/Task-08/index.html
 
 ## Challenges I Faced
