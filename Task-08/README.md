@@ -63,11 +63,10 @@ The hamburger button is wrapped in a `<button>` element so it can receive focus.
 Menu visibility is controlled using:
 
 ```css
-.hamburger:focus + .menu-list{
+.hamburger:focus + .nav-links{
   display: block;
 }
 ```
-
 ## Live Demo
 
 https://dishapatel1230.github.io/Tutedude-tasks/Task-08/index.html
