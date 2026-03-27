@@ -72,6 +72,16 @@ button:hover {
 ## Live Demo
 https://dishapatel1230.github.io/Tutedude-tasks/Task-09/index.html
 ---
+## Challenges I Faced
+1. Button Tilting Issue
+2. Maintaining Smooth Animation
+3. Creating a Natural Tilt Effect
+
+Used transform: scale() instead of changing size-related properties, which allows the button to grow without disturbing the layout.
+
+Added the transition property to animate the transform and box-shadow values, creating a smoother user experience.
+
+Applied transform: rotate(-6deg) for the default state and reset it to rotate(0deg) on hover, making the animation feel natural and interactive.
 
 ## Visual Effect
 
