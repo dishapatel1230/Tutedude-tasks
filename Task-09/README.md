@@ -69,6 +69,10 @@ button:hover {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 ```
+## How to Run
+1. Download or clone the project.
+2. Open the project folder.
+3. Run the `index.html` file in any browser.
 ## Live Demo
 https://dishapatel1230.github.io/Tutedude-tasks/Task-09/index.html
 ---
