@@ -1,5 +1,5 @@
 let principalAmount = 5000;  //p
-let annualrate = 0.1;        //r (10% converted to decimal)
+let annualRate = 0.1;        //r (10% converted to decimal)
 let timeInYears= 3;          // t (years)
 let n=1;               // number of times compounded per year
 
