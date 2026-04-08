@@ -1,14 +1,16 @@
-let number = 9;           
-let remainder = number % 2;  //module operation
-let result;                 //To store result;
-let CheckType = "Odd/Even Type";
+// Function to check if a number is odd or even
 
-//if-else 
+function checkEvenOdd(number){
+    
+let remainder = number % 2;  // Modulo operator gives the remainder after division by 2
 
-    if(remainder === 0){
-      result = `${number} is Even`;  
-    }else {
-        result = `${number} is Odd`;
-    }
-console.log(CheckType);
-console.log(result);
+// If remainder is 0 → number is even, otherwise odd
+let result = remainder === 0 ? "Even" : "Odd" // Ternary operator
+
+console.log(`Number:${number}`);
+console.log(`Result:${result}`);
+}
+// Calling function with different values
+checkEvenOdd(7);
+checkEvenOdd(15);
+checkEvenOdd(8);
