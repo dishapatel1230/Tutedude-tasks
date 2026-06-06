@@ -22,7 +22,14 @@
       border: 1px solid #ccc;
       font-size: 16px;
     }
-
+     button {
+      padding:8px 10px;
+      margin-left:5px;
+      cursor: pointer;
+      color:white;
+      background-color: purple;
+      border-radius: 10px;
+     }
     .container {
       display: flex;
       flex-wrap: wrap;

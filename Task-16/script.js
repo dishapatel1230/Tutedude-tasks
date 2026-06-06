@@ -1,45 +1,43 @@
+//student data
+const students = [
+    {name:"Disha", marks: 80, class: "10th", address: "Vadodara" },
+    {name:"Keyur", marks:90, class:"9th", address:"Mumbai"},
+    {name:"Shrey", marks:87, class:"8th",address:"Vadodara"},
+    { name: "Priya", marks: 90, class: "10th", address: "Ahmedabad" }
+];
+// get elements
+const container = document.getElementById("studentContainer");
+const searchInput = document.getElementById("searchInput");
+const searchBtn = document.getElementById("searchBtn");
+const resetBtn = document.getElementById("resetBtn");
+/*
+ map() → used to create cards
+*/
+function renderStudents(List){
 
-    const students = [
-      { name: "Disha Patel", marks: 85, class: "10th", address: "Vadodara" },
-      { name: "Rahul Sharma", marks: 78, class: "9th", address: "Mumbai" },
-      { name: "Priya Mehta", marks: 92, class: "10th", address: "Ahmedabad" },
-      { name: "Amit Singh", marks: 67, class: "8th", address: "Delhi" },
-      { name: "Neha Verma", marks: 88, class: "9th", address: "Pune" },
-      {name: "Ishita Chokshi",marks:86,class:"8th",address:"Surat"},
-      {name:"Ekta Chauhan",marks:90,class:"9th",address:"Mumbai"}
-    ];
-
-    const container = document.getElementById("studentContainer");
-    const searchInput = document.getElementById("searchInput");
-
-    function renderStudents(studentList) {
-      if (studentList.length === 0) {
-        container.innerHTML = "<p class='no-data'>No students found</p>";
-        return;
-      }
-
-      const cardsHTML = studentList.map(student => `
+    const cards = List.map(function(item){
+        return `
         <div class="card">
-          <h3>${student.name}</h3>
-          <p><strong>Marks:</strong> ${student.marks}</p>
-          <p><strong>Class:</strong> ${student.class}</p>
-          <p><strong>Address:</strong> ${student.address}</p>
+        <p>Name:${item.name}</p>
+        <p>Marks:${item.marks}</p>
+        <p>Class:${item.class}</p>
+        <p>Address:${item.address}</p>
         </div>
-      `).join("");
-
-      container.innerHTML = cardsHTML;
-    }
-
-    // Initial Render
-    renderStudents(students);
-
-    searchInput.addEventListener("input", function () {
-      const searchValue = this.value.toLowerCase();
-
-      const filteredStudents = students.filter(student =>
-        student.name.toLowerCase().includes(searchValue)
-      );
-
-      renderStudents(filteredStudents);
+        `;
     });
+    container.innerHTML = cards.join("");
+}
+renderStudents(students)
+/* filter() → used for search*/
+searchBtn.addEventListener("click",function(){
+    const value = searchInput.value.toLowerCase();
+    const result = students.filter(function(item){
+        return item.name.toLowerCase().includes(value);
+    });
+    renderStudents(result);
+});
 
+resetBtn.addEventListener("click",function(){
+    searchInput.value ="";
+    renderStudents(students);
+});
