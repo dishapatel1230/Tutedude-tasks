@@ -124,7 +124,6 @@ node script.js
 - Arrow Functions
 - Error Handling
 - `.then()` and `.catch()`
-- Asynchronous Programming
 
 ---
 
@@ -134,7 +133,6 @@ After completing this assignment, you will understand:
 
 - How to create and return Promises.
 - How to resolve and reject Promises.
-- How to handle asynchronous operations.
 - How to manage runtime errors using Promise error handling.
 
 ---
